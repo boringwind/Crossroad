@@ -15,6 +15,12 @@
 		072F8F40271C5E78002F767C /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F8F38271C5E78002F767C /* TopView.swift */; };
 		072F8F45271C5EAD002F767C /* Crossroad in Frameworks */ = {isa = PBXBuildFile; productRef = 072F8F44271C5EAD002F767C /* Crossroad */; };
 		072F8F47271C662A002F767C /* PokemonSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F8F46271C662A002F767C /* PokemonSearchView.swift */; };
+		A222EF3027F838630071655C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A222EF2F27F838630071655C /* AppDelegate.swift */; };
+		A222EF3227F838630071655C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A222EF3127F838630071655C /* ViewController.swift */; };
+		A222EF3427F838640071655C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A222EF3327F838640071655C /* Assets.xcassets */; };
+		A222EF3727F838640071655C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A222EF3527F838640071655C /* Main.storyboard */; };
+		A222EF3C27F838A50071655C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F8F32271C5E78002F767C /* Pokemon.swift */; };
+		A222EF3E27F839010071655C /* Crossroad in Frameworks */ = {isa = PBXBuildFile; productRef = A222EF3D27F839010071655C /* Crossroad */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		072F8F39271C5E78002F767C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072F8F42271C5EA4002F767C /* Crossroad */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Crossroad; path = ../..; sourceTree = "<group>"; };
 		072F8F46271C662A002F767C /* PokemonSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSearchView.swift; sourceTree = "<group>"; };
+		A222EF2D27F838630071655C /* Demo-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A222EF2F27F838630071655C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A222EF3127F838630071655C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A222EF3327F838640071655C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A222EF3627F838640071655C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A222EF3827F838640071655C /* Demo_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo_mac.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A222EF2A27F838630071655C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A222EF3E27F839010071655C /* Crossroad in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				072F8F30271C5E78002F767C /* Demo */,
+				A222EF2E27F838630071655C /* Demo-mac */,
 				072F8F12271C4CF7002F767C /* Products */,
 				072F8F43271C5EAD002F767C /* Frameworks */,
 			);
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				072F8F11271C4CF7002F767C /* Demo.app */,
+				A222EF2D27F838630071655C /* Demo-mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +120,18 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A222EF2E27F838630071655C /* Demo-mac */ = {
+			isa = PBXGroup;
+			children = (
+				A222EF2F27F838630071655C /* AppDelegate.swift */,
+				A222EF3127F838630071655C /* ViewController.swift */,
+				A222EF3327F838640071655C /* Assets.xcassets */,
+				A222EF3527F838640071655C /* Main.storyboard */,
+				A222EF3827F838640071655C /* Demo_mac.entitlements */,
+			);
+			path = "Demo-mac";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +155,26 @@
 			productReference = 072F8F11271C4CF7002F767C /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A222EF2C27F838630071655C /* Demo-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A222EF3B27F838640071655C /* Build configuration list for PBXNativeTarget "Demo-mac" */;
+			buildPhases = (
+				A222EF2927F838630071655C /* Sources */,
+				A222EF2A27F838630071655C /* Frameworks */,
+				A222EF2B27F838630071655C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo-mac";
+			packageProductDependencies = (
+				A222EF3D27F839010071655C /* Crossroad */,
+			);
+			productName = "Demo-mac";
+			productReference = A222EF2D27F838630071655C /* Demo-mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -128,11 +182,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					072F8F10271C4CF7002F767C = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					A222EF2C27F838630071655C = {
+						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
@@ -150,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				072F8F10271C4CF7002F767C /* Demo */,
+				A222EF2C27F838630071655C /* Demo-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +219,15 @@
 			files = (
 				072F8F3D271C5E78002F767C /* Preview Assets.xcassets in Resources */,
 				072F8F3A271C5E78002F767C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A222EF2B27F838630071655C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A222EF3427F838640071655C /* Assets.xcassets in Resources */,
+				A222EF3727F838640071655C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +246,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A222EF2927F838630071655C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A222EF3227F838630071655C /* ViewController.swift in Sources */,
+				A222EF3027F838630071655C /* AppDelegate.swift in Sources */,
+				A222EF3C27F838A50071655C /* Pokemon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A222EF3527F838640071655C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A222EF3627F838640071655C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		072F8F23271C4CF8002F767C /* Debug */ = {
@@ -234,6 +322,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,6 +378,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -352,6 +442,60 @@
 			};
 			name = Release;
 		};
+		A222EF3927F838640071655C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo-mac/Demo_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mac.Demo-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A222EF3A27F838640071655C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Demo-mac/Demo_mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mac.Demo-mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,10 +517,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A222EF3B27F838640071655C /* Build configuration list for PBXNativeTarget "Demo-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A222EF3927F838640071655C /* Debug */,
+				A222EF3A27F838640071655C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		072F8F44271C5EAD002F767C /* Crossroad */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Crossroad;
+		};
+		A222EF3D27F839010071655C /* Crossroad */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Crossroad;
 		};
