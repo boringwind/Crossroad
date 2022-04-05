@@ -15,8 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
        ViewController()
     }()
     
-    private lazy var router: Router = {
-        Router.init(accepting: .universalLink(URL.init(string: "dida365.com")!))
+    private lazy var router: BasicRouter = {
+        BasicRouter.init(accepting: .universalLink(URL.init(string: "dida365.com")!))
     }()
 
 

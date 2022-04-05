@@ -1,6 +1,25 @@
+import Foundation
+
+public struct URLOption {
+}
+
+public typealias BasicRouter = Router<URLOption>
+
+public extension Router where UserInfo == URLOption {
+    @discardableResult
+    func openIfPossible(_ url: URL) -> Bool {
+        return openIfPossible(url, userInfo: URLOption())
+    }
+}
+
+extension Context where UserInfo == URLOption {
+    public var options: URLOption {
+        userInfo
+    }
+}
+
 #if os(iOS)
 
-import Foundation
 import UIKit
 
 public typealias ApplicationOpenURLOptions = [UIApplication.OpenURLOptionsKey: Any]
